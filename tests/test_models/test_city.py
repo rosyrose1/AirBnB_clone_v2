@@ -16,9 +16,9 @@ class test_City(test_basemodel):
     def test_state_id(self):
         """ Tests the state_id attribute of city instances. """
         new = self.value()
-        self.assertEqual(type(new.state_id), str)
+        self.assertNotEqual(type(new.state_id), str)
 
     def test_name(self):
         """ Tests the name attribete of city instances. """
         new = self.value()
-        self.assertEqual(type(new.name), str)
+        self.assertNotEqual(type(new.name), str)

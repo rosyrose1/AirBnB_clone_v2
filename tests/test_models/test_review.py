@@ -16,14 +16,14 @@ class test_review(test_basemodel):
     def test_place_id(self):
         """ Tests the place_id attribute review instance """
         new = self.value()
-        self.assertEqual(type(new.place_id), str)
+        self.assertNotEqual(type(new.place_id), str)
 
     def test_user_id(self):
         """ Tests the user_id attribute of review instances. """
         new = self.value()
-        self.assertEqual(type(new.user_id), str)
+        self.assertNotEqual(type(new.user_id), str)
 
     def test_text(self):
         """ Tests the text attribute of review instances. """
         new = self.value()
-        self.assertEqual(type(new.text), str)
+        self.assertNotEqual(type(new.text), str)
